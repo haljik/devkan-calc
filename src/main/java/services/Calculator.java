@@ -15,4 +15,10 @@ public class Calculator {
     public String add(@QueryParam("a")int a, @QueryParam("b")int b){
         return "2";
     }
+
+    @GET
+    @Path("subtract")
+    public String subtract(@QueryParam("a")int a, @QueryParam("b")int b) {
+        return "0";
+    }
 }
